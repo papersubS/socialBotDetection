@@ -50,5 +50,4 @@ f = pd.read_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/p.csv', engi
                          encoding='latin1', sep=";", header=0)
 mediaRes=f.groupby(['Autore']).mean()
 #print(mediaRes['Numero caratteri totali'])
-
 mediaRes.to_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/media100troll.csv', mode='a', sep=';',header=False,index=1)
