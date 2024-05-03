@@ -55,7 +55,6 @@ for n_tweet in tweet:
     df_trad_spampbots['Class']= 3
     #####################
     
-    
     ##############Genuine#####################
     df_genuine_media = pd.read_csv('Multiclass/Features/'+n_tweet+'/mediagenuine.csv',  sep=";", decimal=',')
     df_genuine_std = pd.read_csv('Multiclass/Features/'+n_tweet+'/devgenuine.csv',  sep=";", decimal=',')
