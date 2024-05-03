@@ -8,8 +8,7 @@ for the arms race,” in Proceedings of the 26th international conference
 on world wide web companion, 2017, pp. 963–972".*
 It contains a collection of spambots, social spambots, fake followers, and genuine accounts, extracted from the Twitter social networking platform. In particular, since in this dataset different kinds of bot-driven accounts are represented, we used it to answer RQ1-RQ3.
 The second dataset is collected from a list of known bots and trolls used to conduct the study in "J*ason Skowronski. 2019.  Identifying trolls and bots on Reddit with machine learning (Part 2). https://towardsdatascience.com/identifying-trolls-and-  
-bots-on-reddit-with-machine-learning-709da5970af1"* based on the  
-Reddit social media platform.
+bots-on-reddit-with-machine-learning-709da5970af1"* based on the  Reddit social media platform.
 
 **Metric Suite**:
 The metrics suite has been built by selecting the indicators
