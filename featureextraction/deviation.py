@@ -41,6 +41,5 @@ with open('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/Devbot.csv', 'a', 
         frame.append(df)
     merged = pd.concat(frame, axis=0, ignore_index=True)
 
-
     g = merged.groupby(['Autore']).std(ddof=0)
     g.to_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/Devbot.csv', mode='a', sep=',', header=False, index=1)
