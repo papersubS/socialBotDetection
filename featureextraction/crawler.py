@@ -8,7 +8,6 @@ import textstat
 import emojis
 import pandas as pd
 
-
 class Metrics:
     textstat.set_lang("it")
 
