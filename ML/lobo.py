@@ -12,7 +12,6 @@ from sklearn.svm import LinearSVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 
-
 path = ''
 results_path = 'LOBO/'
 BOTS = ['Fake followers', 'Spam BOT', 'Traditional Spam BOT']
