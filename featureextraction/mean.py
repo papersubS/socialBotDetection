@@ -30,7 +30,6 @@ with open('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/mediatroll.csv', '
     out_file.write("GunningFogAvg" + ',')
     out_file.write("SMOG(SimpleMeasureOfGobbledygook)Avg" + ',')
     out_file.write("LinsearWriteAvg" + "\n")
-
     os.chdir("C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/troll/")
     frame = []
     for f in glob.glob("*"):
