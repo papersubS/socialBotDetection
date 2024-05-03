@@ -48,6 +48,6 @@ result = c.groupby(['Autore']).head(100)
 result.to_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/p.csv', mode='a', sep=';',header=True,index=0)
 
 f = pd.read_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/p.csv', engine="python", quotechar='"',
-                         encoding='latin1', sep=";", header=0)
+                        encoding='latin1', sep=";", header=0)
 devRes=f.groupby(['Autore']).std(ddof=0)
 devRes.to_csv('C:/Users/sonia/OneDrive/Desktop/Bot/metricheReddit/dev100troll.csv', mode='a', sep=';', header=False, index=1)
