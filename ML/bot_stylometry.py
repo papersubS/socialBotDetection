@@ -10,7 +10,6 @@ df_fake_follower_std = df_fake_follower_std.drop(columns='Author')
 df_fake_follower = pd.concat([df_fake_follower_media, df_fake_follower_std], axis=1)
 df_fake_follower['Class']= 1
 #####################
-
 ###########Spam BOT#########
 
 df_spambot1_media = pd.read_csv(path+'mediasp1.csv',  sep=";", decimal=',')
