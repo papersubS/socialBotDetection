@@ -10,7 +10,6 @@ from sklearn.feature_selection import RFECV, chi2, SelectKBest, f_classif
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-
 from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 import sys
