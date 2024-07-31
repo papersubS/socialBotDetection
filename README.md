@@ -1,4 +1,4 @@
-**Replication Package for the paper entitled**  "*Hi, Robot: Exploring Writing Style Consistency-based Approaches for Timely  Identifying Heterogeneous Social Bots*"
+**Replication Package for the paper entitled**  "*Exploring Writing Style Consistency to Timely Identify Heterogeneous Social Bots*"
 
 **Dataset**:
 To answer the research questions, we considered two different datasets. The first is the same one used in:
