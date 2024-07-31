@@ -35,4 +35,18 @@ Under the folder **/ML**, we provide the code for training and testing the 5 mac
 1. bot_stylometry.py: given input a .csv file containing the mean and standard deviation of the calculated metrics allows training and testing of the chosen classifiers and produces accuracy, precision, recall and f1_score as output;
 2. crosstwitterreddit.py: given input a .csv file containing the mean and standard deviation of the number of posts allows to train our models on one dataset (i.e., Twitter) and test them on the other (i.e., Reddit);
 3. lobo.py: allows to perform the LOBO (Leave-One-Botnet-Out) test that assesses whether a classifier can be effective in detecting bot samples belonging to a category not represented in the training set and, thus, by only training on the other bot types;
-4. multicalssbot.py: allows to train our multi-class classifiers, using a stratified nested 10-fold cross-validation to split the Twitter dataset or Reddit dataset in training and test set, and a 10-fold inner cross-validation for hyper-parameters selection and model validation. 
+4. multicalssbot.py: allows to train our multi-class classifiers, using a stratified nested 10-fold cross-validation to split the Twitter dataset or Reddit dataset in training and test set, and a 10-fold inner cross-validation for hyper-parameters selection and model validation.
+
+**Machine Learning (ML) classifiers hyperparameters**
+We a-priori select a set of hyper-parameters for each model to perform the model validation   using grid search. In particular, for the DT, the depth varies between 1 and 4, and the CART learning algorithm is used. For the   RF classifier, the depth varies between 1 and 4, and the number of estimators is selected in  {20,  50,  100}. For LR C is set in  {10−3,  10−2, . . . ,  101}, and penalty in  {𝐿1, 𝐿2}. For SVM linear, C is set  in  {10−3,  10−2, . . . ,  101}. Finally, for SVM RBF C is set in  {10−3,  10−2, . . . ,  101}  and  𝛾  in  {10−3,  10−2, . . . ,  100}. We normalize the data using a standard scaler for LR, SVM linear, and SVM rbf.
+**ML model diagnostic abilities**
+*RQ1 (distinguish different bot types):*
+To further investigate the diagnostic ability of the ML models, we report in table below the false predicted labels as False Negatives (FN) and False Positives (FP), the true predicted labels as True Positives (TP), and the Precision (P) and Recall (R) achieved for the four  
+distinct sets of Twitter accounts. For the five classifiers considered,  the first two models (Decision Tree and Random Forest) achieve encouraging results in terms of Precision and Recall in detecting genuine accounts, while they obtain quite a low classification effec-  
+tiveness in recognizing bots of the traditional spambot type (i.e., a Precision of 62.7% for the Decision Tree model and a Recall of 64.7% for the Random Forest model). Additionally, the Decision Tree classifier achieves Recall results lower than 76% for the fake follower and traditional spambot classes. The logistic regression and SVM linear models are able to achieve Precision values of about 90% and Recall values higher than 93% for genuine accounts but they obtain lower Recall values for the fake follower category (i.e., 87.5% and 87.3%, respectively). Finally, the SVM with RBF kernel classifier  
+achieves the best performance by being able to achieve Precision and Recall values higher than 93% for all classes, obtaining very high results in identifying bots of the social spambot class (i.e, a Precision of 
+99.6% and a Recall of 98.4%).
+![T5](https://github.com/user-attachments/assets/584c64bb-6469-44ae-a085-b312f01e0893)
+
+
+
